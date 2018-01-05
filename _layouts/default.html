@@ -4,9 +4,9 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en-US' }}">
   <head>
     {% include meta.html %}
-    {% include nav--top.html %}
   </head>
   <body class="{{ layout.class }} {{ page.class }}">
+    {% include nav--top.html %}
     <main id="main-content"{% for _attr in layout.main %} {{ _attr[0] }}="{{ _attr[1] }}"{% endfor %}>
     {{ content }}
     </main>
